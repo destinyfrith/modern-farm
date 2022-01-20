@@ -10,12 +10,12 @@ const yearlyPlan = createPlan()
 // below are checking to see if seeds are working
 // import { createAsparagus } from "./seeds/asparagus.js"
 
-// const asparagusSeed = createAsparagus()
-// console.log(asparagusSeed)
+import { createAsparagus } from "./seeds/asparagus.js";
+const asparagusSeed = createAsparagus()
 
-// import { createCorn } from "./seeds/corn.js";
-// const cornSeed = createCorn()
-// console.log(cornSeed)
+
+import { createCorn } from "./seeds/corn.js";
+const cornSeed = createCorn()
 
 
 // Create a seed object
@@ -23,12 +23,11 @@ const seedObj = {
     type: "seed object",
     height: 2,
     output: 5
-
-
 };
 
 // import functions from other pages to invoke below
 import { usePlants } from "./field.js"
+import { plantSeeds } from "./tractor.js";
 
 // Invoke addPlant and specify seed obj as argument
 let addingPlant = addPlant(seedObj)
@@ -36,4 +35,10 @@ let addingPlant = addPlant(seedObj)
 // Invoke usePlants and store its return in variable
 let usingPlants = usePlants()
 
-console.log(usingPlants)
+//Invoke function that plants seeds
+let plantTheSeeds = plantSeeds()
+
+// Import array from fields.js
+import { arrayOfPlants } from "./field.js"
+
+console.log(plantTheSeeds)

@@ -1,5 +1,5 @@
 // Create a variable that is an empty array 
-let arrayOfPlants = []
+export let arrayOfPlants = []
 
 // Create and export a function that takes seed object as input and pushes it to the array
 export const addPlant = (seedObj) => {
@@ -13,4 +13,4 @@ export const usePlants = () => {
 
 import { createCorn } from "./seeds/corn.js"
 
-Array.isArray(createCorn)
+console.log()
