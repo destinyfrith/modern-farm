@@ -1,5 +1,5 @@
 // Create a variable that is an empty array 
-export let arrayOfPlants = []
+let arrayOfPlants = []
 
 // Create and export a function that takes seed object as input and pushes it to the array
 export const addPlant = (seedObj) => {
@@ -8,7 +8,8 @@ export const addPlant = (seedObj) => {
 
 // This function returns a copy of the array of plants
 export const usePlants = () => {
-    return arrayOfPlants
+    const newPlantArray = arrayOfPlants.map(seedObj => ({ ...seedObj }))
+    return newPlantArray
 }
 
 import { createCorn } from "./seeds/corn.js"

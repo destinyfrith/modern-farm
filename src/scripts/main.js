@@ -4,8 +4,10 @@
 import { addPlant } from "./field.js";
 import { createPlan } from "./plan.js";
 
+
 // Invoke the above function by calling on it with a new variable
 const yearlyPlan = createPlan()
+console.log(yearlyPlan)
 
 // below are checking to see if seeds are working
 // import { createAsparagus } from "./seeds/asparagus.js"
@@ -39,6 +41,6 @@ let usingPlants = usePlants()
 let plantTheSeeds = plantSeeds()
 
 // Import array from fields.js
-import { arrayOfPlants } from "./field.js"
 
-console.log(plantTheSeeds)
+
+console.log(usingPlants)

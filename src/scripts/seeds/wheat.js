@@ -1,7 +1,7 @@
 export const createWheat = () => {
 
     const wheat = {
-        type: "wheat",
+        type: "Wheat",
         height: 230,
         output: 6
     }
