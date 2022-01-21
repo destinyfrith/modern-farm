@@ -21,24 +21,27 @@ const cornSeed = createCorn()
 
 
 // Create a seed object
-const seedObj = {
-    type: "seed object",
-    height: 2,
-    output: 5
-};
+// const seedObj = {
+//     type: "seed object",
+//     height: 2,
+//     output: 5
+// };
 
 // import functions from other pages to invoke below
-import { usePlants } from "./field.js"
+import { usePlants } from "./field.js";
 import { plantSeeds } from "./tractor.js";
 
 // Invoke addPlant and specify seed obj as argument
-let addingPlant = addPlant(seedObj)
+// let addingPlant = addPlant(seedObj)
+// console.log(addingPlant)
 
 // Invoke usePlants and store its return in variable
 let usingPlants = usePlants()
+console.log(usingPlants)
 
 //Invoke function that plants seeds
-let plantTheSeeds = plantSeeds()
+let plantTheSeeds = plantSeeds(yearlyPlan)
+console.log(plantTheSeeds)
 
 // Import array from fields.js
 

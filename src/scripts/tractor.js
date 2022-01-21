@@ -23,7 +23,8 @@ export const plantSeeds = (yearlyPlan) => {
             }
             else if (foodType === "Corn") {
                 const cornSeed = createCorn()
-                addPlant(cornSeed)
+                for (const corn of cornSeed)
+                    addPlant(corn)
             }
             else if (foodType === "Potato") {
                 const potatoSeed = createPotato()
