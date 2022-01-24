@@ -31,6 +31,7 @@ const cornSeed = createCorn()
 import { usePlants } from "./field.js";
 import { plantSeeds } from "./tractor.js";
 import { harvestPlants } from "./harvester.js"
+import { Catalog } from "./catalog.js"
 
 // Invoke addPlant and specify seed obj as argument
 // let addingPlant = addPlant(seedObj)
@@ -48,4 +49,7 @@ console.log(plantTheSeeds)
 // Make sure to specify the array as an argument to the harvest function 
 
 let harvestThePlants = harvestPlants(plantTheSeeds)
-console.log(harvestThePlants)
+// console.log(harvestThePlants)
+
+//Invoke the catalog function and make sure you pass food array as argument 
+let plantCatalog = Catalog(harvestThePlants)
