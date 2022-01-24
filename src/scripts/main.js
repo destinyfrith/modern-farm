@@ -30,20 +30,22 @@ const cornSeed = createCorn()
 // import functions from other pages to invoke below
 import { usePlants } from "./field.js";
 import { plantSeeds } from "./tractor.js";
+import { harvestPlants } from "./harvester.js"
 
 // Invoke addPlant and specify seed obj as argument
 // let addingPlant = addPlant(seedObj)
 // console.log(addingPlant)
 
 // Invoke usePlants and store its return in variable
-let usingPlants = usePlants()
-console.log(usingPlants)
+let plantsArray = usePlants()
+console.log(plantsArray)
 
 //Invoke function that plants seeds
 let plantTheSeeds = plantSeeds(yearlyPlan)
 console.log(plantTheSeeds)
 
-// Import array from fields.js
+// Invoke harvest function from harvester 
+// Make sure to specify the array as an argument to the harvest function 
 
-
-console.log(usingPlants)
+let harvestThePlants = harvestPlants(plantTheSeeds)
+console.log(harvestThePlants)
